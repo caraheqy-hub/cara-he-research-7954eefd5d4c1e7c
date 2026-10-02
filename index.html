@@ -9,6 +9,8 @@
   <meta name="theme-color" content="#071624">
   <title>Cara HE · Quantitative Research</title>
   <link rel="stylesheet" href="styles.css?v=3">
+  <script defer src="analytics-config.js"></script>
+  <script defer src="analytics.js"></script>
 </head>
 <body>
   <a class="skip" href="#main" data-en="Skip to content" data-zh="跳转到正文">Skip to content</a>
@@ -30,7 +32,7 @@
   </header>
 
   <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-title">
+    <section class="hero" id="top" aria-labelledby="hero-title" data-track-section="intro">
       <div class="hero-grid" aria-hidden="true"></div>
       <div class="wrap hero-content">
         <p class="eyebrow light" data-en="Quantitative research portfolio" data-zh="量化研究 · 项目作品集">Quantitative research portfolio</p>
@@ -39,7 +41,7 @@
         <p class="hero-intro" data-en="I build transparent research workflows that connect data, models, and decisions." data-zh="我关注数据、模型与决策之间的连接，构建可检验、可复现的研究流程。">I build transparent research workflows that connect data, models, and decisions.</p>
         <div class="hero-actions">
           <a class="button" href="#work" data-en="Explore projects" data-zh="查看项目">Explore projects</a>
-          <a class="text-link on-dark" href="https://github.com/caraheqy-hub" target="_blank" rel="noopener noreferrer"><span data-en="GitHub profile" data-zh="GitHub 主页">GitHub profile</span> <span aria-hidden="true">↗</span></a>
+          <a class="text-link on-dark" href="https://github.com/caraheqy-hub" target="_blank" rel="noopener noreferrer" data-track-link="github-profile"><span data-en="GitHub profile" data-zh="GitHub 主页">GitHub profile</span> <span aria-hidden="true">↗</span></a>
         </div>
         <div class="education" aria-label="Education">
           <span data-en="HKUST · MSc Big Data Technology · 2026–2027" data-zh="香港科技大学 · 大数据技术硕士 · 2026–2027">HKUST · MSc Big Data Technology · 2026–2027</span>
@@ -48,7 +50,7 @@
       </div>
     </section>
 
-    <section class="section work-section" id="work" aria-labelledby="work-title">
+    <section class="section work-section" id="work" aria-labelledby="work-title" data-track-section="projects">
       <div class="wrap">
         <div class="section-heading">
           <div>
@@ -57,7 +59,7 @@
           </div>
           <p class="section-note" data-en="Methods, code, and limitations are part of the work." data-zh="方法、代码和局限性，都是项目的一部分。">Methods, code, and limitations are part of the work.</p>
         </div>
-        <article class="feature-card">
+        <article class="feature-card" data-track-section="qr-factor-lab">
           <div class="feature-topline"><span class="pill" data-en="Open source · A-share factor research" data-zh="开源 · A 股因子研究">Open source · A-share factor research</span><span>2026</span></div>
           <div class="feature-layout">
             <div class="feature-copy">
@@ -65,7 +67,7 @@
               <p class="lead" data-en="A reproducible starting point for A-share factor research." data-zh="一个可复现的 A 股因子研究起点。">A reproducible starting point for A-share factor research.</p>
               <p data-en="The Python framework calculates example momentum and low-volatility factors, checks cross-sectional Rank IC, and runs a simple long-only backtest with assumed costs. Its research log records 19 brokerage reports, 34 candidate ideas, and exploratory screening of 11 daily-bar formulas." data-zh="Python 框架计算动量和低波动示例因子，检查截面 Rank IC，并在假设交易成本下进行简易多头回测。研究记录整理了 19 份券商报告、34 条候选线索，并探索性筛查了 11 条日线公式。">The Python framework calculates example momentum and low-volatility factors, checks cross-sectional Rank IC, and runs a simple long-only backtest with assumed costs. Its research log records 19 brokerage reports, 34 candidate ideas, and exploratory screening of 11 daily-bar formulas.</p>
               <p class="fineprint" data-en="Signals are formed after the close and tested from the next open. The small, fixed stock universe and adjusted-price snapshot limit what the results can show; this is not a live trading strategy." data-zh="信号在收盘后形成，测试从下一交易日开盘开始。固定的小样本股票池与回溯复权价格限制了结果的解释范围；这不是实盘策略。">Signals are formed after the close and tested from the next open. The small, fixed stock universe and adjusted-price snapshot limit what the results can show; this is not a live trading strategy.</p>
-              <a class="text-link" href="https://github.com/caraheqy-hub/qr-factor-lab" target="_blank" rel="noopener noreferrer"><span data-en="View code and research notes" data-zh="查看代码与研究记录">View code and research notes</span> <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/caraheqy-hub/qr-factor-lab" target="_blank" rel="noopener noreferrer" data-track-link="qr-factor-lab"><span data-en="View code and research notes" data-zh="查看代码与研究记录">View code and research notes</span> <span aria-hidden="true">↗</span></a>
             </div>
             <div class="research-board" aria-label="QR Factor Lab research snapshot">
               <div class="board-head"><span data-en="RESEARCH SNAPSHOT" data-zh="研究记录">RESEARCH SNAPSHOT</span><span data-en="EXPLORATORY" data-zh="探索性实验">EXPLORATORY</span></div>
@@ -79,20 +81,20 @@
           </div>
         </article>
         <div class="project-grid">
-          <article class="project-card">
+          <article class="project-card" data-track-section="quant-research-skills">
             <div class="card-meta"><span data-en="Research workflow" data-zh="研究工作流">Research workflow</span><span>GitHub</span></div>
             <h3>Quant Research Skills</h3>
             <p data-en="Six self-authored Codex skills for readable research software, factor experiments, source checks, bilingual writing, and reusable debugging notes. They describe working methods, not trading signals." data-zh="六个自编 Codex 技能，覆盖研究软件开发、因子实验、来源核查、双语写作与调试记录。它们整理的是工作方法，不是交易信号。">Six self-authored Codex skills for readable research software, factor experiments, source checks, bilingual writing, and reusable debugging notes. They describe working methods, not trading signals.</p>
-            <a class="text-link card-link" href="https://github.com/caraheqy-hub/quant-research-skills" target="_blank" rel="noopener noreferrer"><span data-en="View repository" data-zh="查看仓库">View repository</span> <span aria-hidden="true">↗</span></a>
+            <a class="text-link card-link" href="https://github.com/caraheqy-hub/quant-research-skills" target="_blank" rel="noopener noreferrer" data-track-link="quant-research-skills"><span data-en="View repository" data-zh="查看仓库">View repository</span> <span aria-hidden="true">↗</span></a>
           </article>
-          <article class="project-card">
+          <article class="project-card" data-track-section="portfolio-site">
             <div class="card-meta"><span data-en="Portfolio site" data-zh="个人网页">Portfolio site</span><span>GitHub Pages</span></div>
             <h3 data-en="Cara HE · Research Portfolio" data-zh="Cara HE · 研究作品集">Cara HE · Research Portfolio</h3>
             <p data-en="A lightweight, static portfolio for sharing public research projects. Built with HTML, CSS, and a small language-switching script, with direct links to the underlying repositories." data-zh="用于展示公开研究项目的轻量静态网页。使用 HTML、CSS 和简短的语言切换脚本构建，并直接链接到项目仓库。">A lightweight, static portfolio for sharing public research projects. Built with HTML, CSS, and a small language-switching script, with direct links to the underlying repositories.</p>
-            <a class="text-link card-link" href="https://github.com/caraheqy-hub/cara-he-research-7954eefd5d4c1e7c" target="_blank" rel="noopener noreferrer"><span data-en="View repository" data-zh="查看仓库">View repository</span> <span aria-hidden="true">↗</span></a>
+            <a class="text-link card-link" href="https://github.com/caraheqy-hub/cara-he-research-7954eefd5d4c1e7c" target="_blank" rel="noopener noreferrer" data-track-link="portfolio-site"><span data-en="View repository" data-zh="查看仓库">View repository</span> <span aria-hidden="true">↗</span></a>
           </article>
         </div>
-        <aside class="work-note" aria-label="Working philosophy">
+        <aside class="work-note" aria-label="Working philosophy" data-track-section="how-i-work">
           <span class="work-note-label" data-en="How I work" data-zh="我的工作理念">How I work</span>
           <p data-en="LLMs and agents can greatly improve productivity. Bridging the gap between their capabilities and real work still takes an understanding of the underlying principles, continuous learning, and strong fundamentals. That foundation helps me catch and correct AI errors and use these tools more effectively." data-zh="LLM 与 Agent 是很有效的提效工具。但要弥合它们的能力与实际工作之间的差距，仍需理解底层原理、持续学习并打牢基础。这样才能识别和修正 AI 工作中的错误，更高效地驾驭 AI。">LLMs and agents can greatly improve productivity. Bridging the gap between their capabilities and real work still takes an understanding of the underlying principles, continuous learning, and strong fundamentals. That foundation helps me catch and correct AI errors and use these tools more effectively.</p>
         </aside>
