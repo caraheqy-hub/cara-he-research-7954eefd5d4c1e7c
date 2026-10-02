@@ -8,7 +8,7 @@
   <meta name="description" content="Selected quantitative research projects by Cara HE.">
   <meta name="theme-color" content="#071624">
   <title>Cara HE · Quantitative Research</title>
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
   <a class="skip" href="#main" data-en="Skip to content" data-zh="跳转到正文">Skip to content</a>
@@ -92,6 +92,10 @@
             <a class="text-link card-link" href="https://github.com/caraheqy-hub/cara-he-research-7954eefd5d4c1e7c" target="_blank" rel="noopener noreferrer"><span data-en="View repository" data-zh="查看仓库">View repository</span> <span aria-hidden="true">↗</span></a>
           </article>
         </div>
+        <aside class="work-note" aria-label="Working philosophy">
+          <span class="work-note-label" data-en="How I work" data-zh="我的工作理念">How I work</span>
+          <p data-en="LLMs and agents can greatly improve productivity. Bridging the gap between their capabilities and real work still takes an understanding of the underlying principles, continuous learning, and strong fundamentals. That foundation helps me catch and correct AI errors and use these tools more effectively." data-zh="LLM 与 Agent 是很有效的提效工具。但要弥合它们的能力与实际工作之间的差距，仍需理解底层原理、持续学习并打牢基础。这样才能识别和修正 AI 工作中的错误，更高效地驾驭 AI。">LLMs and agents can greatly improve productivity. Bridging the gap between their capabilities and real work still takes an understanding of the underlying principles, continuous learning, and strong fundamentals. That foundation helps me catch and correct AI errors and use these tools more effectively.</p>
+        </aside>
       </div>
     </section>
   </main>
@@ -110,6 +114,7 @@
         document.querySelector('nav').setAttribute('aria-label', language === 'zh' ? '主导航' : 'Primary navigation');
         document.querySelector('.brand').setAttribute('aria-label', language === 'zh' ? 'Cara HE 首页' : 'Cara HE home');
         document.querySelector('.research-board').setAttribute('aria-label', language === 'zh' ? 'QR Factor Lab 研究概况' : 'QR Factor Lab research snapshot');
+        document.querySelector('.work-note').setAttribute('aria-label', language === 'zh' ? '我的工作理念' : 'Working philosophy');
         document.title = language === 'zh' ? 'Cara HE · 量化研究' : 'Cara HE · Quantitative Research';
         localStorage.setItem('portfolio-language', language);
       };

@@ -19,9 +19,13 @@
 .language-switch button:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
 .education{display:flex;flex-direction:column;gap:.42rem;margin-top:5rem;padding:1.4rem 0 1.6rem;border-top:1px solid #355563;color:#a9c4cf;font-size:.79rem;line-height:1.5;letter-spacing:.015em}
 .project-card .card-link{align-self:flex-start;margin-top:auto;padding-top:.8rem}
+.work-note{display:grid;grid-template-columns:150px minmax(0,1fr);gap:1.5rem;margin-top:2.6rem;padding-top:1.35rem;border-top:1px solid var(--rule)}
+.work-note-label{color:var(--blue);font-size:.76rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.work-note p{max-width:860px;margin:0;color:var(--muted);font-size:.88rem;line-height:1.7}
 @media(max-width:650px){
   .header-controls{gap:.8rem}
   nav{gap:.75rem}
   nav a:first-child{display:none}
   .education{margin-top:3.5rem;font-size:.75rem}
+  .work-note{grid-template-columns:1fr;gap:.55rem}
 }
